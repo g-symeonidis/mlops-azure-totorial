@@ -1,8 +1,8 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
 code: model
 command: >-
-  python 
-  --
+  python train.py
+  --ls ${{inputs.data}}
   --
 inputs:
   training_data: 
